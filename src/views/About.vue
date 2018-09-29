@@ -1,5 +1,16 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
+  <ion-page>
+    <ion-header>
+      <ion-toolbar color="primary">
+        <ion-buttons slot="start">
+          <ion-back-button></ion-back-button>
+        </ion-buttons>
+        <ion-title>About</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content padding>
+      <p>About page</p>
+      <ion-button expand="block" @click="$router.back()">Back</ion-button>
+    </ion-content>
+  </ion-page>
 </template>
